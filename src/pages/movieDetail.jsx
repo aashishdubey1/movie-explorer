@@ -1,8 +1,10 @@
 import React from 'react'
+import { useParams } from 'react-router'
 
 const MovieDetail = () => {
+    const {id} = useParams()
   return (
-    <div>movieDetail</div>
+    <div>movieDetail with the params = {id}</div>
   )
 }
 
