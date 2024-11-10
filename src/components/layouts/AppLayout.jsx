@@ -1,6 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router'
 import Header from '../Header'
+import MobileNav from '../MobileNav'
 
 const AppLayout = () => {
   return (
@@ -8,8 +9,9 @@ const AppLayout = () => {
         <main>
             <Header/>
             <Outlet />
-            <footer></footer>
         </main>
+        <footer></footer>
+        <MobileNav />
     </div>
   )
 }
